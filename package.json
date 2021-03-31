@@ -1,0 +1,23 @@
+{
+  "name": "Grade-System-Using-Yargs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tosuccess20xx/Grade-System-Using-Yargs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tosuccess20xx/Grade-System-Using-Yargs/issues"
+  },
+  "homepage": "https://github.com/tosuccess20xx/Grade-System-Using-Yargs#readme",
+  "dependencies": {
+    "yargs": "^16.2.0"
+  }
+}
