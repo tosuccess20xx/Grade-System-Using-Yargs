@@ -1,6 +1,6 @@
 # Grade System Using Yargs V1
 
-## Not Finished
+## Finished
 
 ## Notes
 
@@ -19,12 +19,9 @@
 **Validation**
 - No Duplicated Names
 
-## Finished Till Now
+## Features Finished
 - Created Yargs commands
-
-## Not Completed Yet
 - Add Functionality to the commands
-- Create Files.txt based on subject
-- Read and calculate grades on each file based on name
+- Add Validations
 
-## Deadline - Friday Morning
+## Deadline - Friday Morning (Done)
