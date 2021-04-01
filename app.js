@@ -1,5 +1,8 @@
 const yargs = require('yargs');
 
+// Require Grade System Functionality
+const gradeSystem = require('./grades');
+
 // Add with yargs
 // Add Cli
 // node app.js Add --name='Ayman' --subject='Math' --grade=82 --comment="sdfsfs" 
@@ -33,7 +36,8 @@ yargs.command({
 
     // Code that will be executed
     handler:(argv)=> {
-        console.log('Grade Added', argv);
+        
+        gradeSystem.addRecord(argv.name, argv.subject, argv.grade, argv.comment)
     }
     
 })
@@ -52,9 +56,7 @@ yargs.command({
         }
     },
     handler:(argv)=>{
-        console.log("Record has been Deleted");
-        console.log(argv);
-        console.log("Command used is "+ argv._);
+        gradeSystem.removeRecord(argv.name);
     }
 })
 // Read with yargs
@@ -71,9 +73,7 @@ yargs.command({
         }
     },
     handler:(argv)=>{
-        console.log("Record has been Read");
-        console.log(argv);
-        console.log("Command used is "+ argv._);
+        gradeSystem.readRecord(argv.name)
     }
 })
 
@@ -86,10 +86,8 @@ yargs.command({
     command:'List',
     describe:'List All Records',
 
-    handler:(argv)=>{
-        console.log("Here are the list of all records");
-        console.log(argv);
-        console.log("Command used is "+ argv._);
+    handler:()=>{
+        gradeSystem.listAllRecords();
     }
 })
 

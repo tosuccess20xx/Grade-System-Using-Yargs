@@ -24,5 +24,7 @@
 
 ## Not Completed Yet
 - Add Functionality to the commands
+- Create Files.txt based on subject
+- Read and calculate grades on each file based on name
 
 ## Deadline - Friday Morning
